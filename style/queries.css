@@ -1,0 +1,93 @@
+/* extra small screen from 480px */
+
+@media only screen and (max-width: 480px) {}
+
+
+/* small screen from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+    .panelText {
+        width: 100%;
+    }
+    .leftPanel {
+        height: 100vh;
+    }
+    .mainNav {
+        display: none;
+    }
+    .mainNav {
+        float: left;
+        margin-top: 35px;
+        /*        margin-left: 25px;*/
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    .mainNav li {
+        display: block;
+    }
+    .mainNav li a:link,
+    .mainNav li a:visited {
+        display: inline-block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    .sticky .mainNav {
+        margin-top: 15px;
+    }
+    .sticky .mainNav li a:link,
+    .sticky .mainNav li a:visited {
+        color: #555;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    .logo {
+        width: 80px;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+    }
+    .logoBlack {
+        display: none;
+    }
+}
+
+
+/* medinum screen from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    .panelText {
+        width: 100%;
+    }
+}
+
+
+/* large screen from 1024px to 1365px */
+
+@media only screen and (max-width: 1365px) {
+    /*HEADER*/
+    .heroTextBox {
+        width: 100%;
+        padding: 0 4%;
+    }
+    .row {
+        max-width: none;
+        width: 100%;
+        padding: 0 4%;
+    }
+    /*ABOUTME*/
+    .panelText {
+        margin: 0 2%;
+    }
+    /*MOTTO*/
+    .motto h2 {
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
