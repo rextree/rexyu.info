@@ -15,46 +15,6 @@
     .leftPanel {
         height: 100vh;
     }
-    .mainNav {
-        display: none;
-    }
-    .mainNav {
-        float: left;
-        margin-top: 35px;
-        /*        margin-left: 25px;*/
-    }
-    .mobile-nav-icon {
-        display: inline-block;
-    }
-    .mainNav li {
-        display: block;
-    }
-    .mainNav li a:link,
-    .mainNav li a:visited {
-        display: inline-block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-    .sticky .mainNav {
-        margin-top: 15px;
-    }
-    .sticky .mainNav li a:link,
-    .sticky .mainNav li a:visited {
-        color: #555;
-    }
-    .sticky .mobile-nav-icon i {
-        color: #555;
-    }
-    .logo {
-        width: 80px;
-        height: auto;
-        float: left;
-        margin-top: 10px;
-    }
-    .logoBlack {
-        display: none;
-    }
 }
 
 
@@ -91,3 +51,48 @@
         padding-right: 4%;
     }
 }
+
+
+
+/*
+.mainNav {
+        display: none;
+    }
+    .mainNav {
+        float: left;
+        margin-top: 35px;
+                margin-left: 25px;
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    .mainNav li {
+        display: block;
+    }
+    .mainNav li a:link,
+    .mainNav li a:visited {
+        display: inline-block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    .sticky .mainNav {
+        margin-top: 15px;
+    }
+    .sticky .mainNav li a:link,
+    .sticky .mainNav li a:visited {
+        color: #555;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    .logo {
+        width: 60px;
+        height: auto;
+        float: left;
+        margin-top: 10px;
+    }
+    .logoBlack {
+        display: none;
+    }
+*/

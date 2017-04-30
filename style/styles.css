@@ -1,7 +1,7 @@
 /********************************/
 
 
-/**********BASIC STYLE***********/
+/*basic setup*/
 
 
 /********************************/
@@ -26,13 +26,31 @@ html {
 }
 
 
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+	/* ie 6/7 */
+}
+
 /********************************/
 
 
-/************HEADER************/
+/*header section*/
 
 
 /********************************/
+
+
+/*header background*/
 
 header {
     background-image: linear-gradient(rgba( 0, 0, 0, 0.7), rgba( 0, 0, 0, 0.7)), url(../img/heroImage.jpg);
@@ -40,14 +58,17 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+     display: flex;
+      justify-content: center;
+      align-items: center;
 }
+/*end*/
+
+
+/*heroTextbox*/
 
 .heroTextBox {
     width: 1140px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
 }
 
 .heroTextBox h2 {
@@ -65,6 +86,12 @@ header {
     line-height: 150%;
 }
 
+
+/*end*/
+
+
+/*cv btn styles*/
+
 .btn-cv:link,
 .btn-cv:visited {
     background-color: #c0392b;
@@ -78,7 +105,10 @@ header {
 }
 
 
-/*SOCIAL*/
+/*end*/
+
+
+/*social link*/
 
 .social {
     margin-top: 30px;
@@ -105,7 +135,236 @@ header {
 }
 
 
-/*NAVBAR*/
+/*end*/
+
+
+/********************************/
+
+
+/*about me section*/
+
+
+/********************************/
+
+
+/*about me font color setup*/
+
+.aboutMe {
+    color: black;
+}
+
+
+/*end*/
+
+
+/*left panel with text*/
+
+.leftPanel {
+    height: 70vh;
+}
+
+.panelText {
+    width: 570px;
+    margin: 10% 0 0 auto;
+    padding: 5% 10% 10% 0;
+    font-weight: 300;
+}
+
+.panelText h2 {
+    padding: 0 0 0 15px;
+    border-left: 5px solid #c0392b;
+    margin-bottom: 15px;
+}
+
+.panelText p {
+    line-height: 150%;
+    font-weight: 300;
+    padding-left: 20px;
+    word-spacing: 1px;
+}
+
+
+/*end*/
+
+
+/*right panel*/
+
+.rightPanel {
+    height: 70vh;
+    background-image: url(../img/desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*end*/
+
+
+/********************************/
+
+
+/*personal motto section*/
+
+
+/********************************/
+
+
+/*motto background*/
+
+.motto {
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.75), rgba( 0, 0, 0, 0.75)), url(../img/feet.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+
+/*end*/
+
+
+/*motto text part*/
+
+.motto h2 {
+    line-height: 200%;
+    font-weight: 300;
+    font-size: 150%;
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+
+
+/*end*/
+
+
+/********************************/
+
+
+/*projects*/
+
+
+/********************************/
+
+
+/*projects background*/
+
+.projects {
+    background-color: #000;
+    height: 70vh;
+}
+
+
+/*end*/
+
+
+/********************************/
+
+
+/*footer*/
+
+
+/********************************/
+
+
+/*footer*/
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 80%;
+}
+
+
+/*end*/
+
+
+/********************************/
+
+
+/*reusable componment*/
+
+
+/********************************/
+
+
+/*buttons basic style*/
+
+.btn {
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+
+
+/*end*/
+
+
+/*white logo*/
+
+.logo {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+}
+
+
+/*end*/
+
+
+/*black logo*/
+
+.logoBlack {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+
+/*end*/
+
+
+/********************************/
+
+
+/*animation*/
+
+
+/********************************/
+
+
+/*left panel text animation (fade in)*/
+
+.js--panelText {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s
+}
+
+.js--panelText .animated {
+    opacity: 1;
+}
+
+
+/*end*/
+
+
+/***************/
+
+
+/*old version navigation bar*/
+
+
+/***************/
+
+
+/*
 
 .mainNav {
     list-style-type: none;
@@ -141,7 +400,6 @@ header {
     width: 100%
 }
 
-/*MOBILE NAVBAR*/
 .mobile-nav-icon{
     float: right;
     margin-top: 15px;
@@ -156,7 +414,6 @@ header {
 }
 
 
-/*STICKY NAVBAR*/
 
 .sticky {
     position: fixed;
@@ -199,163 +456,4 @@ header {
     display: block;
 }
 
-
-
-
-/********************************/
-
-
-/************ABOUTME************/
-
-
-/********************************/
-
-.aboutMe {
-    color: black;
-}
-
-
-/*LEFT PANEL*/
-
-.leftPanel {
-    height: 70vh;
-}
-
-.panelText {
-    width: 570px;
-    margin: 10% 0 0 auto;
-    padding: 5% 10% 10% 0;
-    font-weight: 300;
-}
-
-.panelText h2 {
-    padding: 0 0 0 15px;
-    border-left: 5px solid #c0392b;
-    margin-bottom: 15px;
-}
-
-.panelText p {
-    line-height: 150%;
-    font-weight: 300;
-    padding-left: 20px;
-    word-spacing: 1px;
-}
-
-
-/*RIGHT PANEL*/
-
-.rightPanel {
-    height: 70vh;
-    background-image: url(../img/desktop.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/********************************/
-
-
-/************MOTTO************/
-
-
-/********************************/
-
-.motto{
-    background-image: linear-gradient(rgba( 0, 0, 0, 0.75), rgba( 0, 0, 0, 0.75)), url(../img/feet.jpeg);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    height: 80vh;
-}
-
-.motto h2{
-    line-height: 200%;
-    font-weight: 300;
-    font-size: 150%;
-    width: 1140px;
-    margin: 0 auto;
-    padding-top: 30vh;
-}
-
-/********************************/
-
-
-/************PROJECTS************/
-
-
-/********************************/
-
-.projects {
-    background-color: #000;
-    height: 70vh;
-}
-
-/********************************/
-
-
-/**********COMPONENTS***********/
-
-
-/********************************/
-footer{
-    background-color: #000;
-    padding: 20px 0;
-}
-
-footer p{
-    font-size: 80%;
-}
-/********************************/
-
-
-/**********COMPONENTS***********/
-
-
-/********************************/
-
-
-/*BUTTONS*/
-
-.btn {
-    display: inline-block;
-    padding: 8px 10px;
-    text-decoration: none;
-}
-
-
-/*LOGO*/
-
-.logo {
-    width: 80px;
-    height: auto;
-    float: left;
-    margin-top: 40px;
-}
-
-.logoBlack {
-    width: 60px;
-    height: auto;
-    float: left;
-    margin-top: 10px;
-}
-
-
-
-/********************************/
-
-
-/**********ANIMATION***********/
-
-
-/********************************/
-
-.js--panelText {
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s
-}
-
-.js--panelText .animated {
-    opacity: 1;
-}
+*/
