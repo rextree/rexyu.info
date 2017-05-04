@@ -81,6 +81,12 @@ $extra-large-screen: 1366px;
 			display: block;
 		}
 	}
+	.projects{
+		.projectItem{
+			width: 100% !important;
+			margin-left: 0 !important;
+		}
+	}
 }
 
 
