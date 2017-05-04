@@ -1,0 +1,110 @@
+//screen size
+$extra-small-screen: 480px;
+$small-screen: 767px;
+$medium-screen: 1024px;
+$large-screen: 1365px;
+$extra-large-screen: 1366px;
+
+
+
+
+/* extra small screen from 480px */
+
+@media only screen and (max-width: $extra-small-screen) {
+	html, body{
+		font-size: 14px;
+	}
+	.aboutMe{
+		.rightPanel{
+			display: none;
+		}
+	}
+	.mainNav{
+		display: none;
+	}
+}
+
+
+/* small screen from 481px to 767px */
+
+@media only screen and (max-width: $small-screen) {
+	.aboutMe{
+		.leftPanel{
+			width: 100%;
+			.panelText{
+				margin-left: 10%;
+				margin-right: 10%;
+				padding-right: 0;
+			}
+		}
+		.rightPanel{
+			display: none;
+		}
+	}
+	.mainNav{
+		width: 100%;
+		display: none;
+		li{
+			margin-left: 0;
+			display: block;
+			a:link,
+			a:visited{
+				color: #000;
+			}
+			a::after{
+				background: #000;
+			}
+			a:hover::after,
+			a:active::after{
+				width: 20%;
+			}
+		}
+	}
+	.hamburger{
+		display: block !important;
+	}
+	nav{
+		margin-top: 0px;
+		background-color: #fff;
+		.hamburger-inner{
+			background-color: #000;
+			&,
+			&::before,
+			&::after{
+				background-color: #000;
+			}
+		}
+		.logo{
+			display: none;
+		}
+		.logoBlack{
+			display: block;
+		}
+	}
+}
+
+
+/* medinum screen from 768px to 1023px */
+
+@media only screen and (max-width: $medium-screen) {
+	.hamburger{
+		display: none;
+	}
+ 
+}
+
+
+/* large screen from 1024px to 1365px */
+
+@media only screen and (max-width: $large-screen) {
+	.hamburger{
+		display: none;
+	}
+}
+
+/* extra large screen from 1366px...*/
+@media only screen and (min-width: $extra-large-screen){
+	.hamburger{
+		display: none;
+	}
+}

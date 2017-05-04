@@ -1,3 +1,5 @@
+@import "./hamburgers/hamburgers";
+
 /////////////////
 //all the variables
 /////////////////
@@ -15,7 +17,7 @@ $font-size: 16px;
 $font-weight: 400;
 $title-word-spacing: 10px;
 //size variables
-$max-width: 980px;
+$max-width: 80%;
 $logo-width: 70px;
 $logo-width-small: 50px;
 $header-height: 100vh;
@@ -107,6 +109,14 @@ header {
     marigin: 0;
 }
 
+.logoBlack{
+	width: $logo-width;
+	height: auto;
+	float: left;
+	margin: 0;
+	display: none;
+}
+
 .mainNav {
     margin-top: 15px;
     float: right;
@@ -141,6 +151,12 @@ header {
 
 nav {
     margin-top: 40px;
+	.hamburger{
+		position: absolute;
+		right: 10%;
+		cursor: pointer;
+		padding-top: 10px;
+	}
 }
 
 .heroTextBox {
@@ -221,8 +237,7 @@ nav {
         .panelText {
             margin-top: $content-spacing;
             margin-bottom: $content-spacing;
-            width: $max-width/2;
-            margin-left: auto;
+            margin-left: 20.32%;
             padding-right: $content-spacing/2;
             h2 {
                 display: inline-block;
@@ -263,8 +278,8 @@ nav {
     .rightPanel {
         background: url(../img/desktop.jpg) no-repeat center;
         background-size: cover;
-        margin: 0;
-        width: 50.8%;
+		margin-top: 0;
+		margin-bottom: 0;
     }
 }
 
@@ -401,8 +416,8 @@ nav {
     .row {
         margin: $content-spacing/2 auto;
         .projectItem {
-            width: 48%;
-            margin-left: 4%;
+			width: 47.5%;
+			margin-left: 5%;
             box-shadow: 0px 1px 10px $black;
             transition: box-shadow 0.3s;
             margin-bottom: $content-spacing/2;
@@ -612,6 +627,8 @@ footer {
     .row {
         margin: $content-spacing auto;
         .contact {
+			padding-bottom: $content-spacing/2;
+			padding-top: $content-spacing/2;
             text-align: center;
             box-shadow: 0px 0px 0px $black;
             transition: all 0.5s;
@@ -631,7 +648,6 @@ footer {
                 font-size: 150%;
             }
             .footerSocial {
-                margin-bottom: $content-spacing/2;
                 .fa {
                     line-height: 200%;
                     font-size: 180%;
@@ -650,6 +666,8 @@ footer {
             box-shadow: 0px 10px 30px $black;
         }
         .footerNav {
+			padding-top: $content-spacing/2;
+			padding-bottom: $content-spacing/2;
             box-shadow: 0px 0px 0px $black;
             transition: all 0.5s;
             text-align: center;
@@ -658,7 +676,7 @@ footer {
             }
             ul {
                 list-style: none;
-                margin-bottom: $content-spacing/2;
+                
                 li {
                     margin: $content-spacing/5 0;
                     a {
@@ -685,6 +703,7 @@ footer {
                 border-radius: 100%;
                 box-shadow: 0 1px 10px $black;
                 transition: all .5s;
+				margin-top: $content-spacing/2;
                 margin-bottom: $content-spacing/2;
             }
             img:hover {
@@ -693,6 +712,7 @@ footer {
         }
     }
     .rights {
+		
         text-align: center;
     }
 }
